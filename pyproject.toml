@@ -12,6 +12,7 @@ dependencies = [
     "nonebot-adapter-onebot>=2.4.4",
     "nonebot-adapter-console>=0.6.0",
     "nonebot-plugin-alconna>=0.52.1",
+    "nonebot-plugin-status>=0.8.1",
 ]
 license = {text = "GPLv3"}
 
