@@ -13,7 +13,8 @@ dependencies = [
     "nonebot-adapter-console>=0.6.0",
     "nonebot-plugin-alconna>=0.52.1",
     "nonebot-plugin-status>=0.8.1",
-    "nonebot-plugin-code>=0.0.8",
+    "httpx>=0.27.2",
+    "nonebot-plugin-apscheduler>=0.5.0",
 ]
 license = {text = "GPLv3"}
 
@@ -22,7 +23,7 @@ adapters = [
     { name = "OneBot V11", module_name = "nonebot.adapters.onebot.v11" },
     { name = "Console", module_name = "nonebot.adapters.console" }
 ]
-plugins = ["nonebot_plugin_alconna", "nonebot_plugin_status", "nonebot_plugin_code"]
+plugins = ["nonebot_plugin_alconna", "nonebot_plugin_status"]
 plugin_dirs = ["mari/plugins"]
 builtin_plugins = ["echo"]
 
