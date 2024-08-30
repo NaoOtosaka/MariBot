@@ -22,7 +22,7 @@ async def main(state: T_State, args: Message = CommandArg()):
     code_info = args.extract_plain_text()
     if not code_info:
         await command.finish(f"请输入运行语言和代码...\n目前支持的语言有:\n{support_msg}")
-    split = code_info.split('\n')
+    split = code_info.split('\n', 1)
     language = split[0].replace('\n', '').replace('\r', '').strip()
     logger.info(split)
     try:
