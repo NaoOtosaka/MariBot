@@ -32,7 +32,7 @@ async def main(state: T_State, args: Message = CommandArg()):
         if not state.get("code_run_status"):
             state["code_run_error"] = error
             await command.skip()
-        await command.finish(f"{success_msg}\n{'=' * 10}\n{output}\n{'=' * 10}\n")
+        await command.finish(f"{success_msg}\n{'=' * 10}\n{output}\n{'=' * 10}")
     except IndexError:
         await command.finish(
             f"不支持的语言\n目前仅支持\n{support_msg}\n请输入全称")
