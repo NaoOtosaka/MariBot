@@ -14,16 +14,15 @@ dependencies = [
     "nonebot-plugin-alconna>=0.52.1",
     "nonebot-plugin-status>=0.8.1",
     "nonebot-plugin-code>=0.0.8",
-    "nonebot-plugin-moyu>=0.3.3",
 ]
 license = {text = "GPLv3"}
 
 [tool.nonebot]
 adapters = [
-    { name = "OneBot V11", module_name = "nonebot.adapters.onebot.v11" },
+    { name = "OneBot V11", module_name = "nonebot.adapters.onebot.v11" },:
     { name = "Console", module_name = "nonebot.adapters.console" }
 ]
-plugins = ["nonebot_plugin_alconna", "nonebot_plugin_status", "nonebot_plugin_code", "nonebot_plugin_moyu"]
+plugins = ["nonebot_plugin_alconna", "nonebot_plugin_status", "nonebot_plugin_code"]
 plugin_dirs = ["mari/plugins"]
 builtin_plugins = ["echo"]
 
