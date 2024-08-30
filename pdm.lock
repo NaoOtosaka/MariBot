@@ -5,10 +5,10 @@
 groups = ["default"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:9501d3ecbbbe43ef565042d11e53c6fe2b0f766d9099a2b659c213e91b2743a2"
+content_hash = "sha256:753469d789e9b5b900dd4fdbb85ef237c26f5e3573c5e75bf0ab1f3eb6d8e1ba"
 
 [[metadata.targets]]
-requires_python = ">=3.9"
+requires_python = ">=3.10"
 
 [[package]]
 name = "annotated-types"
@@ -635,6 +635,39 @@ dependencies = [
 files = [
     {file = "nonebot_plugin_apscheduler-0.5.0-py3-none-any.whl", hash = "sha256:8b99b5ee60c4bc195d4df2fd27dab3d6963691e3332f6cee31a06eb4277c307f"},
     {file = "nonebot_plugin_apscheduler-0.5.0.tar.gz", hash = "sha256:6c0230e99765f275dc83d6639ff33bd6f71203fa10cd1b8a204b0f95530cda86"},
+]
+
+[[package]]
+name = "nonebot-plugin-dify"
+version = "0.1.4"
+requires_python = ">=3.10"
+summary = "A Nonebot plugin for interacting with Dify"
+groups = ["default"]
+dependencies = [
+    "httpx>=0.27.0",
+    "nonebot-plugin-alconna>=0.50.2",
+    "nonebot-plugin-localstore>=0.7.0",
+    "nonebot2>=2.3.0",
+]
+files = [
+    {file = "nonebot_plugin_dify-0.1.4-py3-none-any.whl", hash = "sha256:e254ea0ef64bbda359ae45775d3a7bdd058d4ad94f83d4e954f65aef09df8696"},
+    {file = "nonebot_plugin_dify-0.1.4.tar.gz", hash = "sha256:e2b320bf06bfc3653212280410da1e3f5b7868515c13e1f9f65720d263d770e4"},
+]
+
+[[package]]
+name = "nonebot-plugin-localstore"
+version = "0.7.1"
+requires_python = "<4.0,>=3.9"
+summary = "Local Storage Support for NoneBot2"
+groups = ["default"]
+dependencies = [
+    "nonebot2<3.0.0,>=2.2.0",
+    "pydantic!=2.5.0,!=2.5.1,<3.0.0,>=1.10.0",
+    "typing-extensions<5.0.0,>=4.0.0",
+]
+files = [
+    {file = "nonebot_plugin_localstore-0.7.1-py3-none-any.whl", hash = "sha256:7908af162d1d0e8c736ae8863723325d057289f6b080ae44ff9ff39294f9ed16"},
+    {file = "nonebot_plugin_localstore-0.7.1.tar.gz", hash = "sha256:9c2a7b39b50240896d9306adb79d8047308d0e77b88e3272b19be4908bdaabc9"},
 ]
 
 [[package]]
