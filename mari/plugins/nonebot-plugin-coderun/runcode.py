@@ -43,7 +43,7 @@ class code():
         try:
             codeId = self.codeIds[language]
         except KeyError:
-            return '不支持的语言\n目前仅支持\nkotlin/java/lua/nodejs/go/swift/rust/ruby/c#/c++/c/py/php\n请输入全称'
+            raise IndexError
         token = await self.getToken(codeId)
         result = await self.getResult(token, code, language)
         return result

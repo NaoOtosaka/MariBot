@@ -1,8 +1,9 @@
 from nonebot import on_command
 from nonebot.internal.params import ArgPlainText
 from nonebot.params import CommandArg
-from nonebot.adapters.onebot.v11 import MessageEvent, Message, Bot, GroupMessageEvent
-import re
+from nonebot.adapters.onebot.v11 import Message
+
+
 from .runcode import code
 from nonebot.typing import T_State
 from nonebot import logger
@@ -21,10 +22,11 @@ async def main(state: T_State, args: Message = CommandArg()):
     code_info = args.extract_plain_text()
     if not code_info:
         await command.finish(f"请输入运行语言和代码...\n目前支持的语言有:\n{support_msg}")
-    split = re.findall("(.+?)[\r\n](\n)([\s\S]*)", code_info)
+    split = code_info.split('\n')
+    language = split[0].replace('\n', '').replace('\r', '').strip()
     logger.info(split)
     try:
-        output, error = await runcode.run(split[0][0], split[0][2])
+        output, error = await runcode.run(language, split[1])
         state["code_run_status"] = False if error.replace('\n', '') else True
         logger.info(state.get("code_run_status"))
         if not state.get("code_run_status"):
