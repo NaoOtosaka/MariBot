@@ -17,11 +17,12 @@ support_msg = "kotlin/java/lua/nodejs/go/swift/rust/ruby/c#/c++/c/py/php"
 
 
 @command.handle()
-async def main(bot: Bot, event: MessageEvent, state: T_State, args: Message = CommandArg()):
-    code = args.extract_plain_text()
-    if not code:
+async def main(state: T_State, args: Message = CommandArg()):
+    code_info = args.extract_plain_text()
+    if not code_info:
         await command.finish(f"请输入运行语言和代码...\n目前支持的语言有:\n{support_msg}")
-    split = re.findall("(.+?)[\r\n](\n)([\s\S]*)", code)
+    split = re.findall("(.+?)[\r\n](\n)([\s\S]*)", code_info)
+    logger.info(split)
     try:
         output, error = await runcode.run(split[0][0], split[0][2])
         state["code_run_status"] = False if error.replace('\n', '') else True
