@@ -19,7 +19,7 @@ license = {text = "GPLv3"}
 
 [tool.nonebot]
 adapters = [
-    { name = "OneBot V11", module_name = "nonebot.adapters.onebot.v11" },:
+    { name = "OneBot V11", module_name = "nonebot.adapters.onebot.v11" },
     { name = "Console", module_name = "nonebot.adapters.console" }
 ]
 plugins = ["nonebot_plugin_alconna", "nonebot_plugin_status", "nonebot_plugin_code"]
