@@ -32,7 +32,7 @@ async def main(state: T_State, args: Message = CommandArg()):
         if not state.get("code_run_status"):
             state["code_run_error"] = error
             await command.skip()
-        await command.finish(f'{success_msg} \n {output}')
+        await command.finish(f"{success_msg}\n{'=' * 10}\n{output}\n{'=' * 10}\n")
     except IndexError:
         await command.finish(
             f"不支持的语言\n目前仅支持\n{support_msg}\n请输入全称")
@@ -43,5 +43,5 @@ async def get_error(state: T_State, trigger_msg: Message = ArgPlainText()):
     status = state.get("code_run_status")
     logger.info(status)
     if (trigger in trigger_msg) and not status:
-        await command.finish(f"出现的异常是: \n{'=' * 10}\n{state.get('code_run_error')}\n{'=' * 10}\n下次要注意哦")
+        await command.finish(f"出现的异常是:\n{'=' * 10}\n{state.get('code_run_error')}\n{'=' * 10}\n下次要注意哦")
     await command.finish('是哪里错了呢？')
