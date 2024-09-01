@@ -58,7 +58,7 @@ async def ignore_rule(event: Event) -> bool:
     return False
 
 recieve_message: type[Matcher] = on_message(
-        rule=Rule(ignore_rule) & to_me(),
+        rule=Rule(ignore_rule),
         priority=99,
         block=False,
     )
