@@ -23,7 +23,7 @@ adapters = [
     { name = "OneBot V11", module_name = "nonebot.adapters.onebot.v11" },
 #    { name = "Console", module_name = "nonebot.adapters.console" }
 ]
-plugins = ["nonebot_plugin_alconna", "nonebot_plugin_status", "nonebot_plugin_localstore"]
+plugins = ["nonebot_plugin_alconna", "nonebot_plugin_status", "nonebot_plugin_localstore", "nonebot_plugin_questionmark"]
 plugin_dirs = ["mari/plugins"]
 builtin_plugins = ["echo"]
 
