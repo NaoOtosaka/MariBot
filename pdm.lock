@@ -5,7 +5,7 @@
 groups = ["default"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:5cf7c67b44d2031863d36d9b26e01d2d8e4d9ec6b95c6809f6f2b989cf7176bd"
+content_hash = "sha256:bd4bf76908d71b98efb636789c5ec58008799f29faedbf248b745c3bb0b24b02"
 
 [[metadata.targets]]
 requires_python = ">=3.10"
@@ -688,6 +688,20 @@ dependencies = [
 files = [
     {file = "nonebot_plugin_apscheduler-0.5.0-py3-none-any.whl", hash = "sha256:8b99b5ee60c4bc195d4df2fd27dab3d6963691e3332f6cee31a06eb4277c307f"},
     {file = "nonebot_plugin_apscheduler-0.5.0.tar.gz", hash = "sha256:6c0230e99765f275dc83d6639ff33bd6f71203fa10cd1b8a204b0f95530cda86"},
+]
+
+[[package]]
+name = "nonebot-plugin-questionmark"
+version = "0.4.1"
+requires_python = ">=3.8"
+summary = "NoneBot2 行为艺术插件, 有群友或私聊发送全是问号/感叹号的消息时, bot会自动把问号/感叹号方向翻转并发出来"
+groups = ["default"]
+dependencies = [
+    "nonebot2>=2.0.0rc3",
+]
+files = [
+    {file = "nonebot_plugin_questionmark-0.4.1-py3-none-any.whl", hash = "sha256:d6c30cf0c4f6cc0cb8a9256c23f2fde29b68791b938bda1d2b439b46ae06e035"},
+    {file = "nonebot_plugin_questionmark-0.4.1.tar.gz", hash = "sha256:71b5437665ef2adf14c74c380060afb9db50764cb3461b7b47103e6086393ae8"},
 ]
 
 [[package]]
