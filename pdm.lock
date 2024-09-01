@@ -5,7 +5,7 @@
 groups = ["default"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:bd4bf76908d71b98efb636789c5ec58008799f29faedbf248b745c3bb0b24b02"
+content_hash = "sha256:f831a09078bfff615b2d8f272bf58b8a37739ad99a26850a50b56787a460de71"
 
 [[metadata.targets]]
 requires_python = ">=3.10"
@@ -702,6 +702,21 @@ dependencies = [
 files = [
     {file = "nonebot_plugin_questionmark-0.4.1-py3-none-any.whl", hash = "sha256:d6c30cf0c4f6cc0cb8a9256c23f2fde29b68791b938bda1d2b439b46ae06e035"},
     {file = "nonebot_plugin_questionmark-0.4.1.tar.gz", hash = "sha256:71b5437665ef2adf14c74c380060afb9db50764cb3461b7b47103e6086393ae8"},
+]
+
+[[package]]
+name = "nonebot-plugin-sayoroll"
+version = "1.0.5"
+summary = "基于NoneBot的高仿以前小夜bot的roll功能"
+groups = ["default"]
+dependencies = [
+    "nonebot-adapter-onebot>=2.0.0b1",
+    "nonebot-plugin-alconna>=0.38.2",
+    "nonebot2>=2.2.0",
+]
+files = [
+    {file = "nonebot_plugin_sayoroll-1.0.5-py3-none-any.whl", hash = "sha256:f4d0d7a0c8a49208bf6fa2ad8d156b5f3e28672c27bd69855c51bf7788a7b732"},
+    {file = "nonebot_plugin_sayoroll-1.0.5.tar.gz", hash = "sha256:11675d41f2722cc30d6457a108b3344280ec9f0086a7d9928c21c0947e3f4e59"},
 ]
 
 [[package]]

@@ -16,6 +16,7 @@ dependencies = [
     "httpx[http2]>=0.27.2",
     "nonebot-plugin-apscheduler>=0.5.0",
     "nonebot-plugin-questionmark>=0.4.1",
+    "nonebot-plugin-sayoroll>=1.0.5",
 ]
 license = {text = "GPLv3"}
 
@@ -24,7 +25,7 @@ adapters = [
     { name = "OneBot V11", module_name = "nonebot.adapters.onebot.v11" },
 #    { name = "Console", module_name = "nonebot.adapters.console" }
 ]
-plugins = ["nonebot_plugin_alconna", "nonebot_plugin_status", "nonebot_plugin_localstore", "nonebot_plugin_questionmark"]
+plugins = ["nonebot_plugin_alconna", "nonebot_plugin_status", "nonebot_plugin_localstore", "nonebot_plugin_questionmark", "nonebot_plugin_sayoroll"]
 plugin_dirs = ["mari/plugins"]
 builtin_plugins = ["echo"]
 
