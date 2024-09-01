@@ -15,16 +15,15 @@ dependencies = [
     "nonebot-plugin-status>=0.8.1",
     "httpx>=0.27.2",
     "nonebot-plugin-apscheduler>=0.5.0",
-    "nonebot-plugin-dify>=0.1.4",
 ]
 license = {text = "GPLv3"}
 
 [tool.nonebot]
 adapters = [
     { name = "OneBot V11", module_name = "nonebot.adapters.onebot.v11" },
-    { name = "Console", module_name = "nonebot.adapters.console" }
+#    { name = "Console", module_name = "nonebot.adapters.console" }
 ]
-plugins = ["nonebot_plugin_alconna", "nonebot_plugin_status", "nonebot_plugin_dify"]
+plugins = ["nonebot_plugin_alconna", "nonebot_plugin_status", "nonebot_plugin_localstore"]
 plugin_dirs = ["mari/plugins"]
 builtin_plugins = ["echo"]
 
