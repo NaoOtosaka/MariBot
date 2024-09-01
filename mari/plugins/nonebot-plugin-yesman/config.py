@@ -6,7 +6,7 @@ from pydantic import BaseModel
 class Config(BaseModel):
     """Plugin Config Here"""
     # 设置概率触发的阈值，例如0.5表示50%的概率
-    yes_man_threshold: float = 1
+    yes_man_threshold: float = 0.3
 
     # 触发前缀
     yes_man_prefix: list = ['我觉得']
