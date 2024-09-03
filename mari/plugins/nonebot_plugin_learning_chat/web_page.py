@@ -229,7 +229,7 @@ group_config_form = Form(
             label="回复阈值权重",
             name="answer_threshold_weights",
             value="${answer_threshold_weights}",
-            items=InputNumber(min=1, max=100, value=25, suffix="%"),
+            items=InputNumber(min=1, max=100, value=25, suffix="%").to_dict(),
             inline=True,
             visibleOn="${enable}",
             labelRemark=Remark(
