@@ -5,7 +5,7 @@
 groups = ["default"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:3ec049cc7847dfec3c1cd2e41b62fdeeefaa3fd8896fe5929b47fe8757501280"
+content_hash = "sha256:1dd8b8d0acfb5f44082f4fb24930b5f950418b205bdcf9ba774dd5d2d4aa8111"
 
 [[metadata.targets]]
 requires_python = ">=3.10"
@@ -931,6 +931,26 @@ dependencies = [
 files = [
     {file = "nonebot_plugin_sayoroll-1.0.5-py3-none-any.whl", hash = "sha256:f4d0d7a0c8a49208bf6fa2ad8d156b5f3e28672c27bd69855c51bf7788a7b732"},
     {file = "nonebot_plugin_sayoroll-1.0.5.tar.gz", hash = "sha256:11675d41f2722cc30d6457a108b3344280ec9f0086a7d9928c21c0947e3f4e59"},
+]
+
+[[package]]
+name = "nonebot-plugin-setu-now"
+version = "0.6.4"
+requires_python = "<4.0,>=3.8"
+summary = "另一个色图插件"
+groups = ["default"]
+dependencies = [
+    "httpx<1.0.0,>=0.18.0",
+    "nonebot-adapter-onebot>=2.0.0",
+    "nonebot-plugin-localstore>=0.5.0",
+    "nonebot-plugin-tortoise-orm>=0.1.0",
+    "nonebot2>=2.0.0",
+    "pillow>=8.0.0",
+    "pydantic>=1.5.0",
+]
+files = [
+    {file = "nonebot_plugin_setu_now-0.6.4-py3-none-any.whl", hash = "sha256:d8a6c407a2d3aa5d5ab804f47c65a300bf2f05404e5b06d5d3aed918103200ce"},
+    {file = "nonebot_plugin_setu_now-0.6.4.tar.gz", hash = "sha256:b94ec247a4c00ed6626469cc2561fe7ea98836cc52f61c5e6683b1a9056ebf74"},
 ]
 
 [[package]]
