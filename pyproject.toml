@@ -42,7 +42,6 @@ plugins = [
     "nonebot_plugin_sayoroll",
     "nonebot_plugin_emojimix",
     "nonebot_plugin_whateat_pic",
-    "nonebot_plugin_setu_now",
 ]
 plugin_dirs = ["mari/plugins"]
 builtin_plugins = ["echo"]
