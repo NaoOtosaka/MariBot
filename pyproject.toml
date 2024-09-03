@@ -26,6 +26,7 @@ dependencies = [
     "amis-python @ file:///${PROJECT_ROOT}/packages/amis_python-2.0.0-py3-none-any.whl",
     "nonebot-plugin-emojimix>=0.4.0",
     "nonebot-plugin-whateat-pic>=1.4.2",
+    "nonebot-plugin-setu-now @ file:///${PROJECT_ROOT}/packages/nonebot_plugin_setu_now-0.6.4-py3-none-any.whl",
 ]
 license = {text = "GPLv3"}
 
@@ -42,6 +43,7 @@ plugins = [
     "nonebot_plugin_sayoroll",
     "nonebot_plugin_emojimix",
     "nonebot_plugin_whateat_pic",
+    "nonebot_plugin_setu_now",
 ]
 plugin_dirs = ["mari/plugins"]
 builtin_plugins = ["echo"]
