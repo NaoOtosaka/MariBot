@@ -236,7 +236,7 @@ group_config_form = Form(
                 shape="circle",
                 content="影响回复阈值的计算方式，以默认的回复阈值4、权重[10, 30, 60]为例，在计算阈值时，60%概率为4，30%概率为3，10%概率为2。",
             ),
-        ),
+        ).to_dict(),
         InputNumber(
             label="复读阈值",
             name="repeat_threshold",
