@@ -25,6 +25,7 @@ dependencies = [
     "pydantic==2.8.2",
     "amis-python @ file:///${PROJECT_ROOT}/packages/amis_python-2.0.0-py3-none-any.whl",
     "nonebot-plugin-emojimix>=0.4.0",
+    "nonebot-plugin-whateat-pic>=1.4.2",
 ]
 license = {text = "GPLv3"}
 
@@ -40,6 +41,7 @@ plugins = [
     "nonebot_plugin_questionmark",
     "nonebot_plugin_sayoroll",
     "nonebot_plugin_emojimix",
+    "nonebot_plugin_whateat_pic",
 ]
 plugin_dirs = ["mari/plugins"]
 builtin_plugins = ["echo"]
