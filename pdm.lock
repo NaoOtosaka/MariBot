@@ -5,7 +5,7 @@
 groups = ["default"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:22373130db3438d679210bbd711932c7450b2e8e6b0e7a36d876d49c9c56a830"
+content_hash = "sha256:2acbb6ae85fcb9e6f4eafc6f32ed6fe598001e32c736d0a994904762d4c4f28c"
 
 [[metadata.targets]]
 requires_python = ">=3.10"
@@ -261,6 +261,20 @@ dependencies = [
 files = [
     {file = "ecdsa-0.19.0-py2.py3-none-any.whl", hash = "sha256:2cea9b88407fdac7bbeca0833b189e4c9c53f2ef1e1eaa29f6224dbc809b707a"},
     {file = "ecdsa-0.19.0.tar.gz", hash = "sha256:60eaad1199659900dd0af521ed462b793bbdf867432b3948e87416ae4caf6bf8"},
+]
+
+[[package]]
+name = "emoji"
+version = "2.12.1"
+requires_python = ">=3.7"
+summary = "Emoji for Python"
+groups = ["default"]
+dependencies = [
+    "typing-extensions>=4.7.0",
+]
+files = [
+    {file = "emoji-2.12.1-py3-none-any.whl", hash = "sha256:a00d62173bdadc2510967a381810101624a2f0986145b8da0cffa42e29430235"},
+    {file = "emoji-2.12.1.tar.gz", hash = "sha256:4aa0488817691aa58d83764b6c209f8a27c0b3ab3f89d1b8dceca1a62e4973eb"},
 ]
 
 [[package]]
@@ -844,6 +858,23 @@ dependencies = [
 files = [
     {file = "nonebot_plugin_apscheduler-0.5.0-py3-none-any.whl", hash = "sha256:8b99b5ee60c4bc195d4df2fd27dab3d6963691e3332f6cee31a06eb4277c307f"},
     {file = "nonebot_plugin_apscheduler-0.5.0.tar.gz", hash = "sha256:6c0230e99765f275dc83d6639ff33bd6f71203fa10cd1b8a204b0f95530cda86"},
+]
+
+[[package]]
+name = "nonebot-plugin-emojimix"
+version = "0.4.0"
+requires_python = ">=3.8,<4.0"
+summary = "Nonebot2 plugin for emojimix"
+groups = ["default"]
+dependencies = [
+    "emoji<3.0.0,>=2.0.0",
+    "httpx<1.0.0,>=0.20.0",
+    "nonebot-plugin-alconna<1.0.0,>=0.38.0",
+    "nonebot2<3.0.0,>=2.2.0",
+]
+files = [
+    {file = "nonebot_plugin_emojimix-0.4.0-py3-none-any.whl", hash = "sha256:b49a779d0c9e411d2a0c2737311d75c7a3456bdee102b3c9865e07676c40f02d"},
+    {file = "nonebot_plugin_emojimix-0.4.0.tar.gz", hash = "sha256:a4aa00a3dbc320d4792b6f63d5cd5dce18f1fe604f37e9fc54905fe3c6e2eba5"},
 ]
 
 [[package]]
