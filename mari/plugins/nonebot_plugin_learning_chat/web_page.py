@@ -665,8 +665,8 @@ message_page = PageSchema(
                     '· 点击"删除"可以删除某条记录，但不会影响它的学习。\n'
                     f"· 可以通过搜索{NICKNAME}的QQ号，来查看它的回复记录。"
                 ),
-            ),
-            message_table,
+            ).to_dict(),
+            message_table.to_dict(),
         ],
     ),
 )
@@ -686,8 +686,8 @@ context_page = PageSchema(
                     '· 点击"禁用"可以将该学习进行禁用，以后不会再学。\n'
                     '· 点击"删除"可以删除该学习，让它重新开始学习这句话。'
                 ),
-            ),
-            context_table,
+            ).to_dict(),
+            context_table.to_dict(),
         ],
     ),
 )
@@ -706,8 +706,8 @@ answer_page = PageSchema(
                     '· 点击"禁用"可以将该回复进行禁用，以后不会再学。\n'
                     '· 点击"删除"可以删除该回复，让它重新开始学习。'
                 ),
-            ),
-            answer_table,
+            ).to_dict(),
+            answer_table.to_dict(),
         ],
     ),
 )
@@ -724,7 +724,7 @@ blacklist_page = PageSchema(
                 body=f"此数据库记录了{NICKNAME}被禁用的内容/关键词。\n"
                      "· 可以取消禁用，使其能够重新继续学习。\n"
                      "· 不能在此添加禁用，只能在群中回复[不可以]或者在<配置>中添加屏蔽词来达到禁用效果。",
-            ),
+            ).to_dict(),
             blacklist_table.to_dict(),
         ],
     ),
@@ -732,7 +732,12 @@ blacklist_page = PageSchema(
 database_page = PageSchema(
     label="数据库",
     icon="fa fa-database",
-    children=[message_page.to_dict(), context_page.to_dict(), answer_page.to_dict(), blacklist_page.to_dict()],
+    children=[
+        message_page.to_dict(),
+        context_page.to_dict(),
+        answer_page.to_dict(),
+        blacklist_page.to_dict()
+    ],
 )
 config_page = PageSchema(
     url="/configs",
@@ -764,7 +769,7 @@ github_logo = Tpl(
     tpl='<div class="flex justify-between"><div></div><div><a href="https://github.com/CMHopeSunshine/nonebot-plugin-learning-chat" target="_blank" title="Copyright"><i class="fa fa-github fa-2x"></i></a></div></div>',
 )
 header = Flex(
-    className="w-full", justify="flex-end", alignItems="flex-end", items=[github_logo]
+    className="w-full", justify="flex-end", alignItems="flex-end", items=[github_logo.to_dict()]
 )
 
 admin_app = App(
