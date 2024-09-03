@@ -17,7 +17,13 @@ dependencies = [
     "nonebot-plugin-apscheduler>=0.5.0",
     "nonebot-plugin-questionmark>=0.4.1",
     "nonebot-plugin-sayoroll>=1.0.5",
-    "nonebot-plugin-pallas-repeater>=0.1.4",
+    "python-jose>=3.3.0",
+    "nonebot-plugin-tortoise-orm>=0.1.4",
+    "ruamel-yaml-clib>=0.2.8",
+    "ruamel-yaml>=0.18.6",
+    "jieba-fast>=0.53",
+    "pydantic==2.8.2",
+    "amis-python @ file:///${PROJECT_ROOT}/packages/amis_python-2.0.0-py3-none-any.whl",
 ]
 license = {text = "GPLv3"}
 
@@ -32,7 +38,6 @@ plugins = [
     "nonebot_plugin_localstore",
     "nonebot_plugin_questionmark",
     "nonebot_plugin_sayoroll",
-    "nonebot_plugin_pallas_repeater"
 ]
 plugin_dirs = ["mari/plugins"]
 builtin_plugins = ["echo"]
